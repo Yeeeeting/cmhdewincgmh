@@ -29,7 +29,7 @@
         }
         .timeline-dot {
             position: absolute;
-            top: 24px; /* Adjust this value to vertically center the dot with the time tag */
+            top: 20px; /* Adjust this value to vertically center the dot with the time tag */
             left: 1rem;
             transform: translateX(-50%);
             width: 18px;
@@ -46,24 +46,27 @@
 </head>
 <body class="bg-orange-50/50 text-gray-800">
 
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <header class="text-center mb-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
+        <header class="text-center mb-8">
             <p class="text-xl md:text-2xl text-orange-700 font-semibold">林口長庚</p>
             <h1 class="text-3xl md:text-5xl font-bold text-orange-900 mt-1">AI 工具應用工作坊</h1>
-            <p class="text-lg md:text-xl text-gray-600 mt-3">8/16 (六) 9:00 - 12:30</p>
-            <div class="mt-6 text-gray-500 max-w-2xl mx-auto">
+            <p class="text-lg md:text-xl text-gray-600 mt-2">8/16 (六) 9:00 - 12:30</p>
+            <div class="mt-3 text-gray-500 max-w-2xl mx-auto">
                 <p><span class="font-semibold">主持人:</span> 林口長庚醫學教育研究中心 張玉喆副主任</p>
                 <p><span class="font-semibold">主講者:</span> 奇美醫院教學部 廖家德部長</p>
             </div>
         </header>
 
         <!-- Tabs Navigation -->
-        <div class="mb-8 border-b border-gray-200">
+        <div class="mb-4 border-b border-gray-200">
             <nav class="flex justify-center -mb-px space-x-8" aria-label="Tabs">
-                <button id="tab-agenda" class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg tab-active">
+                <button id="tab-agenda" class="whitespace-nowrap py-3 px-1 border-b-2 font-medium text-lg tab-active">
                     議程
                 </button>
-                <button id="tab-satisfaction" class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                 <button id="tab-groups" class="whitespace-nowrap py-3 px-1 border-b-2 font-medium text-lg text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                    分組名單
+                </button>
+                <button id="tab-satisfaction" class="whitespace-nowrap py-3 px-1 border-b-2 font-medium text-lg text-gray-500 hover:text-gray-700 hover:border-gray-300">
                     滿意度
                 </button>
             </nav>
@@ -75,82 +78,82 @@
             <div class="relative timeline-container max-w-4xl mx-auto">
 
                 <!-- Item 1: Registration -->
-                <div class="relative pl-10 pb-8 timeline-item-container">
+                <div class="relative pl-10 pb-4 timeline-item-container">
                     <div class="timeline-dot"></div>
-                    <div class="pt-1">
+                    <div>
                         <p class="inline-block bg-orange-200 text-orange-800 font-semibold px-3 py-1 rounded-full text-sm">09:00 – 09:30</p>
-                        <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 mt-3 w-full timeline-item transition-all duration-300">
+                        <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 mt-1 w-full timeline-item transition-all duration-300">
                             <h3 class="font-bold text-lg text-gray-900">報到</h3>
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 2: Opening -->
-                <div class="relative pl-10 pb-8 timeline-item-container">
+                <div class="relative pl-10 pb-4 timeline-item-container">
                     <div class="timeline-dot"></div>
-                    <div class="pt-1">
+                    <div>
                         <p class="inline-block bg-orange-200 text-orange-800 font-semibold px-3 py-1 rounded-full text-sm">09:30 – 09:40</p>
-                        <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 mt-3 w-full timeline-item transition-all duration-300">
+                        <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 mt-1 w-full timeline-item transition-all duration-300">
                             <h3 class="font-bold text-lg text-gray-900">開場、致贈感謝狀及拍大合照</h3>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Item 3: Keynote -->
-                <div class="relative pl-10 pb-8 timeline-item-container">
+                <div class="relative pl-10 pb-4 timeline-item-container">
                     <div class="timeline-dot"></div>
-                    <div class="pt-1">
+                    <div>
                         <p class="inline-block bg-orange-200 text-orange-800 font-semibold px-3 py-1 rounded-full text-sm">09:40 – 10:00</p>
-                        <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 mt-3 w-full timeline-item transition-all duration-300">
+                        <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 mt-1 w-full timeline-item transition-all duration-300">
                             <h3 class="font-bold text-lg text-gray-900">生成式 AI 工具之應用</h3>
-                            <p class="text-gray-600 mt-2">講師：廖家德 主任</p>
+                            <p class="text-gray-600 mt-1">講師：廖家德 部長</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 4: Parallel Sessions -->
-                <div class="relative pl-10 pb-8 timeline-item-container">
+                <div class="relative pl-10 pb-4 timeline-item-container">
                      <div class="timeline-dot"></div>
-                     <div class="pt-1">
+                     <div>
                         <p class="inline-block bg-orange-200 text-orange-800 font-semibold px-3 py-1 rounded-full text-sm">10:00 – 11:30</p>
-                        <p class="text-md text-gray-600 mt-3 mb-2">主題課程-分組上課(含實作)</p>
-                        <div class="flex flex-col lg:flex-row gap-6">
+                        <p class="text-md text-gray-600 mt-1 mb-2">主題課程-分組上課(含實作)</p>
+                        <div class="flex flex-col lg:flex-row gap-3">
                             <!-- Session A -->
-                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 w-full timeline-item text-left transition-all duration-300">
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 w-full timeline-item text-left transition-all duration-300">
                                 <h3 class="font-bold text-lg text-orange-700">AI 生成式簡報</h3>
-                                <p class="text-gray-600 mt-1">快速打造吸睛簡報</p>
+                                <p class="text-gray-600 text-sm mt-1">快速打造吸睛簡報</p>
                                 <p class="text-sm text-gray-500 mt-2">地點: 一般外科討論室</p>
                                 <p class="text-sm text-gray-600 mt-2">助理講師: <span class="font-bold">盧英云</span>、林淑雅、陳詩芸</p>
-                                <hr class="my-3"><ul class="list-decimal list-inside space-y-1 text-sm text-gray-700"><li>AI簡報工具介紹</li><li>從無到有到美：從產出文字到視覺化簡報</li><li>美化設計與圖像整合技巧</li><li>實作練習：簡報、海報、會議記錄</li><li>成果展示與回饋</li></ul>
+                                <hr class="my-2"><ul class="list-decimal list-inside space-y-1 text-sm text-gray-700"><li>AI簡報工具介紹</li><li>從無到有到美：從產出文字到視覺化簡報</li><li>美化設計與圖像整合技巧</li><li>實作練習：簡報、海報、會議記錄</li><li>成果展示與回饋</li></ul>
                             </div>
                             <!-- Session B -->
-                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 w-full timeline-item text-left transition-all duration-300">
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 w-full timeline-item text-left transition-all duration-300">
                                 <h3 class="font-bold text-lg text-amber-700">AI 生成式影片</h3>
-                                <p class="text-gray-600 mt-1">讓影片製作更簡單</p>
+                                <p class="text-gray-600 text-sm mt-1">讓影片製作更簡單</p>
                                 <p class="text-sm text-gray-500 mt-2">地點: 內科部5AB討論室</p>
                                 <p class="text-sm text-gray-600 mt-2">助理講師: <span class="font-bold">吳曉琪</span>、李迎真、許淑怡</p>
-                                <hr class="my-3"><ul class="list-decimal list-inside space-y-1 text-sm text-gray-700"><li>常見AI podcast以及影片工具入門</li><li>文字轉影片：簡單想法→腳本→影片</li><li>文字轉podcast：腳本→活潑的廣播、訪談</li><li>人聲、字幕與視覺強化技巧</li><li>實作練習：製作醫療或教學Podcast或影片</li><li>成果展示與回饋</li></ul>
+                                <hr class="my-2"><ul class="list-decimal list-inside space-y-1 text-sm text-gray-700"><li>常見AI podcast以及影片工具入門</li><li>文字轉影片：簡單想法→腳本→影片</li><li>文字轉podcast：腳本→活潑的廣播、訪談</li><li>人聲、字幕與視覺強化技巧</li><li>實作練習：製作醫療或教學Podcast或影片</li><li>成果展示與回饋</li></ul>
                             </div>
                             <!-- Session C -->
-                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 w-full timeline-item text-left transition-all duration-300">
+                            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 w-full timeline-item text-left transition-all duration-300">
                                 <h3 class="font-bold text-lg text-red-700">AI 生成式研究</h3>
-                                 <p class="text-gray-600 mt-1">讓文獻整理更高效</p>
+                                 <p class="text-gray-600 text-sm mt-1">讓文獻整理更高效</p>
                                 <p class="text-sm text-gray-500 mt-2">地點: 整形外科討論室</p>
                                 <p class="text-sm text-gray-600 mt-2">助理講師: <span class="font-bold">林汶秀</span>、楊依玲、楊宜婷</p>
-                                <hr class="my-3"><ul class="list-decimal list-inside space-y-1 text-sm text-gray-700"><li>AI在研究流程中的應用全貌</li><li>挑出自己順手的AI工具</li><li>利用 LLM 協助擬定研究問題與摘要撰寫</li><li>文獻搜尋與整理工具應用</li><li>研究資料初步分析與圖表生成</li><li>成果展示與回饋</li></ul>
+                                <hr class="my-2"><ul class="list-decimal list-inside space-y-1 text-sm text-gray-700"><li>AI在研究流程中的應用全貌</li><li>挑出自己順手的AI工具</li><li>利用 LLM 協助擬定研究問題與摘要撰寫</li><li>文獻搜尋與整理工具應用</li><li>研究資料初步分析與圖表生成</li><li>成果展示與回饋</li></ul>
                             </div>
                         </div>
                      </div>
                 </div>
 
                 <!-- Item 5: Discussion -->
-                <div class="relative pl-10 pb-8 timeline-item-container">
+                <div class="relative pl-10 pb-4 timeline-item-container">
                     <div class="timeline-dot"></div>
-                    <div class="pt-1">
+                    <div>
                         <p class="inline-block bg-orange-200 text-orange-800 font-semibold px-3 py-1 rounded-full text-sm">11:30 – 12:30</p>
-                        <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 mt-3 w-full timeline-item transition-all duration-300">
+                        <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 mt-1 w-full timeline-item transition-all duration-300">
                             <h3 class="font-bold text-lg text-gray-900">綜合討論與發表</h3>
-                            <p class="text-gray-600 mt-2">所有與會者</p>
+                            <p class="text-gray-600 mt-1">所有與會者</p>
                         </div>
                     </div>
                 </div>
@@ -158,30 +161,175 @@
                 <!-- Item 6: Folder -->
                 <div class="relative pl-10 timeline-item-container">
                     <div class="timeline-dot"></div>
-                    <div class="pt-1">
+                    <div>
                         <p class="inline-block bg-gray-200 text-gray-800 font-semibold px-3 py-1 rounded-full text-sm">12:30</p>
-                        <div class="bg-orange-50 p-6 rounded-xl shadow-lg border border-orange-200 mt-3 w-full timeline-item transition-all duration-300">
+                        <div class="bg-orange-50 p-4 rounded-xl shadow-lg border border-orange-200 mt-1 w-full timeline-item transition-all duration-300">
                             <h3 class="font-bold text-lg text-orange-800">工作坊資料夾</h3>
-                            <div class="flex justify-center my-4">
+                            <div class="flex justify-center my-2">
                                 <div id="qrcode-folder" class="p-2 bg-white rounded-lg shadow-inner"></div>
                             </div>
-                            <p class="text-center text-sm text-orange-700">掃描或點擊QR Code存取資料</p>
-                            <p class="text-center text-xs text-gray-500 mt-2 break-all">https://pse.is/7ztmse</p>
+                            <p class="text-center text-sm text-orange-700">掃描或點擊QR Code以存取講義資料</p>
+                            <p class="text-center text-xs text-gray-500 mt-1 break-all">https://pse.is/7ztmse</p>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
+        
+        <div id="content-groups" class="hidden">
+            <div class="max-w-6xl mx-auto space-y-6">
+                <!-- Group 1 -->
+                <div class="bg-white p-5 rounded-xl shadow-lg border border-gray-200">
+                    <h3 class="font-bold text-xl text-orange-700 mb-3">第一組：AI 生成式簡報</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left text-black">
+                            <thead class="bg-orange-100">
+                                <tr>
+                                    <th class="p-2 border border-gray-300 text-center">編號</th>
+                                    <th class="p-2 border border-gray-300">組別</th>
+                                    <th class="p-2 border border-gray-300">姓名</th>
+                                    <th class="p-2 border border-gray-300">單位</th>
+                                    <th class="p-2 border border-gray-300">職類</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">王安怡</td><td class="p-2 border border-gray-300">臨床藥學科</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">王俊力</td><td class="p-2 border border-gray-300">心臟血管內科系</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">江俐慧</td><td class="p-2 border border-gray-300">臨床藥學科</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">4</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">余沁凌</td><td class="p-2 border border-gray-300">內科第五加護病房</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">5</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">周逸榮</td><td class="p-2 border border-gray-300">營養治療科</td><td class="p-2 border border-gray-300">營養師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">6</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">林稚涵</td><td class="p-2 border border-gray-300">一般科</td><td class="p-2 border border-gray-300">PGY</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">7</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">陳厚任</td><td class="p-2 border border-gray-300">人力資源發展部</td><td class="p-2 border border-gray-300">行政人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">8</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">鄭宇恬</td><td class="p-2 border border-gray-300">行政助理組(外)</td><td class="p-2 border border-gray-300">行政人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">9</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">鄭嘉惠</td><td class="p-2 border border-gray-300">品管課</td><td class="p-2 border border-gray-300">行政人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">10</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">孫銘輝</td><td class="p-2 border border-gray-300">眼神經科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">11</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">徐琴娟</td><td class="p-2 border border-gray-300">護理部部務室</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">12</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">徐慧實</td><td class="p-2 border border-gray-300">藥劑部</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">13</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">張中杰</td><td class="p-2 border border-gray-300">牙周病科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">14</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">張仲兒</td><td class="p-2 border border-gray-300">健康管理科護理組</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">15</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">張芝芝</td><td class="p-2 border border-gray-300">中醫部</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">16</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">張博茹</td><td class="p-2 border border-gray-300">一般外科系(研)</td><td class="p-2 border border-gray-300">研究人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">17</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">陳雅惠</td><td class="p-2 border border-gray-300">營養治療科</td><td class="p-2 border border-gray-300">營養師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">18</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">陳靖玟</td><td class="p-2 border border-gray-300">人力資源發展部</td><td class="p-2 border border-gray-300">行政人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">19</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">董惠貞</td><td class="p-2 border border-gray-300">品管課</td><td class="p-2 border border-gray-300">行政人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">20</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">游佳玲</td><td class="p-2 border border-gray-300">臨床藥學科</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">21</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">黃子芸</td><td class="p-2 border border-gray-300">品管課</td><td class="p-2 border border-gray-300">行政人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">22</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">黃玉玲</td><td class="p-2 border border-gray-300">檢驗醫學部品保教學組</td><td class="p-2 border border-gray-300">醫檢師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">23</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">黃婷榆</td><td class="p-2 border border-gray-300">血液科(研)</td><td class="p-2 border border-gray-300">研究人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">24</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">劉倬昊</td><td class="p-2 border border-gray-300">急重症神經外科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">25</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">賴彥儒</td><td class="p-2 border border-gray-300">不分科專科護理師組</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">26</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">謝佩容</td><td class="p-2 border border-gray-300">安全衛生組</td><td class="p-2 border border-gray-300">行政人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">27</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">蘇芳玉</td><td class="p-2 border border-gray-300">臨床藥學科</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">28</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">江金英</td><td class="p-2 border border-gray-300">護理部部務室</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">29</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">陳頡興</td><td class="p-2 border border-gray-300">內科部</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">30</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">鄭小芬</td><td class="p-2 border border-gray-300">研究區</td><td class="p-2 border border-gray-300">研究人員</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Group 2 -->
+                <div class="bg-white p-5 rounded-xl shadow-lg border border-gray-200">
+                    <h3 class="font-bold text-xl text-amber-700 mb-3">第二組：AI 生成式影片</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left text-black">
+                             <thead class="bg-amber-100">
+                                <tr>
+                                    <th class="p-2 border border-gray-300 text-center">編號</th>
+                                    <th class="p-2 border border-gray-300">組別</th>
+                                    <th class="p-2 border border-gray-300">姓名</th>
+                                    <th class="p-2 border border-gray-300">單位</th>
+                                    <th class="p-2 border border-gray-300">職類</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">許昭嫻</td><td class="p-2 border border-gray-300">教材課</td><td class="p-2 border border-gray-300">行政人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">王彩茹</td><td class="p-2 border border-gray-300">腎臟科(研)</td><td class="p-2 border border-gray-300">研究人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">王滇雅</td><td class="p-2 border border-gray-300">肝臟器官移植加護病房</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">4</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">王意雅</td><td class="p-2 border border-gray-300">化學治療室</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">5</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">吳竹芳</td><td class="p-2 border border-gray-300">外科第五加護病房</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">6</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">吳俊賢</td><td class="p-2 border border-gray-300">六樓C區護理站</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">7</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">吳振德</td><td class="p-2 border border-gray-300">急重症影像診療科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">8</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">吳益銘</td><td class="p-2 border border-gray-300">營養治療科</td><td class="p-2 border border-gray-300">營養師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">9</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">李宓</td><td class="p-2 border border-gray-300">九樓B區護理站</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">10</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">洪筠淇</td><td class="p-2 border border-gray-300">林口感染管制組</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">11</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">洪靖茹</td><td class="p-2 border border-gray-300">門診護理二組</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">12</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">洪濬</td><td class="p-2 border border-gray-300">動作障礙科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">13</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">許惇惠</td><td class="p-2 border border-gray-300">腎臟科(研)</td><td class="p-2 border border-gray-300">研究人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">14</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">陳淑真</td><td class="p-2 border border-gray-300">癌症中心</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">15</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">陳雅芳</td><td class="p-2 border border-gray-300">健康管理科護理組</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">16</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">黃忠翠</td><td class="p-2 border border-gray-300">兒童重症加護科(研)</td><td class="p-2 border border-gray-300">研究人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">17</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">黃柏盛</td><td class="p-2 border border-gray-300">藥劑科</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">18</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">黃湘</td><td class="p-2 border border-gray-300">營養治療科</td><td class="p-2 border border-gray-300">營養師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">19</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">楊千辰</td><td class="p-2 border border-gray-300">教材課</td><td class="p-2 border border-gray-300">行政人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">20</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">楊佩蓁</td><td class="p-2 border border-gray-300">藥劑部</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">21</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">劉育辰</td><td class="p-2 border border-gray-300">藥劑部</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">22</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">蔡珮君</td><td class="p-2 border border-gray-300">十一樓C區護理站</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">23</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">鄧佩如</td><td class="p-2 border border-gray-300">八樓G區護理站</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Group 3 -->
+                <div class="bg-white p-5 rounded-xl shadow-lg border border-gray-200">
+                    <h3 class="font-bold text-xl text-red-700 mb-3">第三組：AI 生成式研究</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left text-black">
+                            <thead class="bg-red-100">
+                                <tr>
+                                    <th class="p-2 border border-gray-300 text-center">編號</th>
+                                    <th class="p-2 border border-gray-300">組別</th>
+                                    <th class="p-2 border border-gray-300">姓名</th>
+                                    <th class="p-2 border border-gray-300">單位</th>
+                                    <th class="p-2 border border-gray-300">職類</th>
+                                </tr>
+                            </thead>
+                           <tbody>
+                                <tr><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">王智亮</td><td class="p-2 border border-gray-300">肺腫瘤及內視鏡科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">史紋嫣</td><td class="p-2 border border-gray-300">醫教委員會</td><td class="p-2 border border-gray-300">醫學生</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">巫柏霖</td><td class="p-2 border border-gray-300">牙周病科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">4</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">李嘉莓</td><td class="p-2 border border-gray-300">一般科</td><td class="p-2 border border-gray-300">PGY</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">5</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">周莉芳</td><td class="p-2 border border-gray-300">腎臟醫學研究中心</td><td class="p-2 border border-gray-300">研究人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">6</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">許婉玲</td><td class="p-2 border border-gray-300">林口資材課駐林口資材組</td><td class="p-2 border border-gray-300">行政人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">7</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">林煥堂</td><td class="p-2 border border-gray-300">神經麻醉科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">8</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">曾素美</td><td class="p-2 border border-gray-300">護理部部務室</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">9</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">施欣妮</td><td class="p-2 border border-gray-300">藥事管理部駐嘉義</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">10</td><td class="p-2 border border-gray-300 text-center">1</td><td class="p-2 border border-gray-300">張瑀玲</td><td class="p-2 border border-gray-300">七樓C區護理站</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">11</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">孫麒洹</td><td class="p-2 border border-gray-300">直腸肛門科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">12</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">商舒婷</td><td class="p-2 border border-gray-300">不分科專科護理師組</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">13</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">張凱程</td><td class="p-2 border border-gray-300">藥劑部</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">14</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">彭沛語</td><td class="p-2 border border-gray-300">護理部部務室</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">15</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">張麗玲</td><td class="p-2 border border-gray-300">營養治療科</td><td class="p-2 border border-gray-300">營養師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">16</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">邱凱斌</td><td class="p-2 border border-gray-300">心臟血管內科系</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">17</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">許筱玲</td><td class="p-2 border border-gray-300">血液科(研)</td><td class="p-2 border border-gray-300">研究人員</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">18</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">郭美蘭</td><td class="p-2 border border-gray-300">呼吸治療科</td><td class="p-2 border border-gray-300">呼吸治療師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">19</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">楊佳儒</td><td class="p-2 border border-gray-300">精準醫學檢驗中心</td><td class="p-2 border border-gray-300">醫檢師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">20</td><td class="p-2 border border-gray-300 text-center">2</td><td class="p-2 border border-gray-300">陳柏安</td><td class="p-2 border border-gray-300">急重症神經外科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">21</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">陳益程</td><td class="p-2 border border-gray-300">胃腸肝膽科系</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">22</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">施九方</td><td class="p-2 border border-gray-300">一般科</td><td class="p-2 border border-gray-300">PGY</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">23</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">黃婉苓</td><td class="p-2 border border-gray-300">營養治療科</td><td class="p-2 border border-gray-300">營養師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">24</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">許志杰</td><td class="p-2 border border-gray-300">一般外科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">25</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">黃靜芝</td><td class="p-2 border border-gray-300">呼吸治療科</td><td class="p-2 border border-gray-300">呼吸治療師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">26</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">溫巧尼</td><td class="p-2 border border-gray-300">檢驗醫學部品保教學組</td><td class="p-2 border border-gray-300">醫檢師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">27</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">廖庭偉</td><td class="p-2 border border-gray-300">腦功能暨癲癇科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">28</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">鄭青青</td><td class="p-2 border border-gray-300">護理部部務室</td><td class="p-2 border border-gray-300">護理師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">29</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">蕭旋玲</td><td class="p-2 border border-gray-300">臨床藥學科</td><td class="p-2 border border-gray-300">藥師</td></tr>
+                                <tr><td class="p-2 border border-gray-300 text-center">30</td><td class="p-2 border border-gray-300 text-center">3</td><td class="p-2 border border-gray-300">鍾煒珊</td><td class="p-2 border border-gray-300">一般外科及乳房外科</td><td class="p-2 border border-gray-300">醫師</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div id="content-satisfaction" class="hidden">
-             <div class="max-w-md mx-auto bg-white p-8 rounded-xl shadow-lg text-center">
+             <div class="max-w-md mx-auto bg-white p-5 rounded-xl shadow-lg text-center">
                 <h2 class="text-2xl font-bold text-gray-800 mb-2">工作坊滿意度問卷</h2>
-                <p class="text-gray-600 mb-6">感謝您的參與，請掃描QR Code填寫回饋！</p>
-                <div class="flex justify-center my-4">
+                <p class="text-gray-600 mb-3">感謝您的參與，請掃描QR Code填寫回饋！</p>
+                <div class="flex justify-center my-2">
                     <div id="qrcode-satisfaction" class="p-2 bg-white rounded-lg shadow-inner"></div>
                 </div>
-                 <p class="text-center text-xs text-gray-500 mt-2 break-all">https://forms.gle/AWDpXmFgcTmFPfad9</p>
+                 <p class="text-center text-xs text-gray-500 mt-1 break-all">https://forms.gle/AWDpXmFgcTmFPfad9</p>
              </div>
         </div>
     </div>
@@ -217,13 +365,15 @@
 
         // --- Tab Logic ---
         const tabAgenda = document.getElementById('tab-agenda');
+        const tabGroups = document.getElementById('tab-groups');
         const tabSatisfaction = document.getElementById('tab-satisfaction');
         const contentAgenda = document.getElementById('content-agenda');
+        const contentGroups = document.getElementById('content-groups');
         const contentSatisfaction = document.getElementById('content-satisfaction');
 
         function setActiveTab(activeTab) {
-            const tabs = [tabAgenda, tabSatisfaction];
-            const contents = [contentAgenda, contentSatisfaction];
+            const tabs = [tabAgenda, tabGroups, tabSatisfaction];
+            const contents = [contentAgenda, contentGroups, contentSatisfaction];
             
             tabs.forEach((tab, index) => {
                 if (tab === activeTab) {
@@ -239,6 +389,7 @@
         }
 
         tabAgenda.addEventListener('click', () => setActiveTab(tabAgenda));
+        tabGroups.addEventListener('click', () => setActiveTab(tabGroups));
         tabSatisfaction.addEventListener('click', () => setActiveTab(tabSatisfaction));
     </script>
 </body>
