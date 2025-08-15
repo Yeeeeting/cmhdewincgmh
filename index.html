@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林口長庚AI工具應用工作坊</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+        }
+        .timeline-item-container {
+            transition: transform 0.3s ease;
+        }
+        .timeline-item-container:hover .timeline-item {
+             transform: translateY(-5px);
+             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        /* Vertical timeline line */
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 1.25rem; /* left-5 */
+            width: 4px;
+            height: 100%;
+            background-color: #e5e7eb; /* gray-200 */
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+            .timeline-container::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .timeline-dot {
+            position: absolute;
+            top: 0;
+            left: 1.25rem; /* left-5 */
+            transform: translateX(-50%);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: white;
+            border: 5px solid #9ca3af; /* gray-400 */
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+            .timeline-dot {
+                left: 50%;
+            }
+        }
+        .timeline-item-container.active .timeline-dot {
+             border-color: #3b82f6; /* blue-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <header class="text-center mb-16">
+            <h1 class="text-3xl md:text-5xl font-bold text-blue-600">林口長庚 AI 工具應用工作坊</h1>
+            <p class="text-lg md:text-xl text-gray-600 mt-2">8/16 (六) 9:30 - 12:30</p>
+            <div class="mt-4 text-gray-500 max-w-2xl mx-auto">
+                <p><span class="font-semibold">主持人:</span> 林口長庚醫學教育研究中心 張玉喆副主任</p>
+                <p><span class="font-semibold">主講者:</span> 奇美醫院教學部 廖家德部長</p>
+            </div>
+        </header>
+
+        <!-- Vertical Timeline -->
+        <div class="relative timeline-container max-w-5xl mx-auto">
+
+            <!-- Item 1: Opening -->
+            <div class="relative pl-12 md:pl-0 md:w-1/2 md:pr-8 md:mr-auto timeline-item-container active">
+                <div class="timeline-dot"></div>
+                <div class="py-4">
+                    <p class="text-xl font-bold text-blue-600 md:text-right">09:30 – 09:50</p>
+                    <p class="text-sm text-gray-500 md:text-right">(20分鐘)</p>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 mt-2 w-full timeline-item">
+                        <h3 class="font-bold text-lg text-gray-900">智慧醫療技能工作坊說明</h3>
+                        <p class="text-gray-600 mt-2">講者：廖家德 部長</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Parallel Sessions -->
+            <div class="relative pl-12 md:pl-0 md:w-full timeline-item-container active">
+                 <div class="timeline-dot"></div>
+                 <div class="py-4 md:text-center">
+                    <p class="text-xl font-bold text-blue-600">09:50 – 11:15</p>
+                    <p class="text-sm text-gray-500">(1小時 25分鐘)</p>
+                    <div class="mt-2 flex flex-col md:flex-row gap-6 justify-center">
+                        <!-- Session A: Presentations -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 w-full md:w-80 timeline-item text-left">
+                            <h3 class="font-bold text-lg text-blue-700">AI生成式簡報</h3>
+                            <p class="text-sm text-gray-500 mt-1">地點: 一般外科討論室</p>
+                            <p class="text-sm text-gray-600 mt-2">講者: 英云、淑雅、詩芸</p>
+                            <ul class="list-decimal list-inside mt-4 space-y-2 text-sm text-gray-700">
+                                <li>AI簡報工具介紹</li>
+                                <li>從無到有到美：從產出文字到視覺化簡報</li>
+                                <li>美化設計與圖像整合技巧</li>
+                                <li>實作練習：簡報、海報、會議記錄</li>
+                                <li>成果展示與回饋</li>
+                            </ul>
+                        </div>
+                        <!-- Session B: Videos -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 w-full md:w-80 timeline-item text-left">
+                            <h3 class="font-bold text-lg text-green-700">AI生成式影片</h3>
+                            <p class="text-sm text-gray-500 mt-1">地點: 內科部5AB討論室</p>
+                            <p class="text-sm text-gray-600 mt-2">講者: 曉琪、淑怡、迎真</p>
+                            <ul class="list-decimal list-inside mt-4 space-y-2 text-sm text-gray-700">
+                                <li>常見AI podcast以及影片工具入門</li>
+                                <li>文字轉影片：簡單想法→腳本→影片</li>
+                                <li>文字轉podcast：腳本→活潑的廣播、訪談</li>
+                                <li>人聲、字幕與視覺強化技巧</li>
+                                <li>實作練習：製作醫療或教學Podcast或影片</li>
+                                <li>成果展示與回饋</li>
+                            </ul>
+                        </div>
+                        <!-- Session C: Research -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 w-full md:w-80 timeline-item text-left">
+                            <h3 class="font-bold text-lg text-purple-700">AI生成式研究</h3>
+                            <p class="text-sm text-gray-500 mt-1">地點: 整形外科討論室</p>
+                            <p class="text-sm text-gray-600 mt-2">講者: 汶秀、依玲、宜婷</p>
+                            <ul class="list-decimal list-inside mt-4 space-y-2 text-sm text-gray-700">
+                                <li>AI在研究流程中的應用全貌</li>
+                                <li>挑出自己順手的AI工具</li>
+                                <li>利用 LLM 協助擬定研究問題與摘要撰寫</li>
+                                <li>文獻搜尋與整理工具應用</li>
+                                <li>研究資料初步分析與圖表生成</li>
+                                <li>成果展示與回饋</li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Item 3: Coffee Break -->
+            <div class="relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-8 timeline-item-container active">
+                <div class="timeline-dot"></div>
+                <div class="py-4">
+                    <p class="text-xl font-bold text-blue-600">11:15 – 11:30</p>
+                    <p class="text-sm text-gray-500">(15分鐘)</p>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 mt-2 w-full timeline-item">
+                        <h3 class="font-bold text-lg text-gray-900">Coffee Break</h3>
+                        <p class="text-gray-600 mt-2">所有與會者</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Discussion -->
+            <div class="relative pl-12 md:pl-0 md:w-1/2 md:pr-8 md:mr-auto timeline-item-container active">
+                <div class="timeline-dot"></div>
+                <div class="py-4">
+                    <p class="text-xl font-bold text-blue-600 md:text-right">11:30 – 12:30</p>
+                    <p class="text-sm text-gray-500 md:text-right">(1小時)</p>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 mt-2 w-full timeline-item">
+                        <h3 class="font-bold text-lg text-gray-900">綜合討論與發表</h3>
+                        <p class="text-gray-600 mt-2">所有與會者</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: QR Code -->
+            <div class="relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-8 timeline-item-container active">
+                <div class="timeline-dot"></div>
+                <div class="py-4">
+                    <p class="text-xl font-bold text-blue-600">12:30</p>
+                    <p class="text-sm text-gray-500">工作坊結束</p>
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-lg border border-blue-200 mt-2 w-full timeline-item">
+                        <h3 class="font-bold text-lg text-blue-800">工作坊資料夾</h3>
+                        <div class="flex justify-center my-4">
+                            <div id="qrcode" class="p-2 bg-white rounded-lg shadow-inner"></div>
+                        </div>
+                        <p class="text-center text-sm text-blue-700">掃描或點擊QR Code以上傳檔案或存取工作坊資料。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        const qrCodeContainer = document.getElementById('qrcode');
+        const driveLink = 'https://drive.google.com/drive/folders/1iVmgRh8oC8X8NNne-IQfdIccdoYtkLlp?usp=sharing';
+        
+        // Generate QR Code
+        new QRCode(qrCodeContainer, {
+            text: driveLink,
+            width: 160,
+            height: 160,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+
+        // Make QR Code clickable
+        qrCodeContainer.addEventListener('click', () => {
+            window.open(driveLink, '_blank');
+        });
+        qrCodeContainer.style.cursor = 'pointer';
+    </script>
+</body>
+</html>
